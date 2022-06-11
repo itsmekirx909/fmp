@@ -1,0 +1,122 @@
+.logo{width: 80px;}
+
+.logSi{width: 200px;margin-left: 130px; margin-top: 10px;}
+
+.logSi:hover{width: 300px; margin-left:80px ; transition: ease-in 0.3s;}
+
+.hide{display: none;}
+.show{display: block;}
+
+.animatedNav{
+    animation: animatedNav ease-in 0.8s;
+}
+@keyframes animatedNav{
+    0% {
+        transform: translateY(-50%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+}
+
+.hAn{
+  animation: hAn ease-in 1s;
+}
+@keyframes hAn{
+  0%{
+    opacity: 0;
+    transform: translateY(20%);
+    
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.bAn{
+  animation: bAn ease-in 1s;
+}
+@keyframes bAn{
+  0%{
+    opacity: 0;
+    transform: translateX(-10%);
+    
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+.contact{
+  animation: contact ease-in 1s;
+}
+@keyframes contact{
+  0%{
+    opacity: 0;
+    
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+.hei{max-height: 400px;}
+
+.foo{font-family: 'Lobster', cursive;color: black; font-size: x-large !important;}
+.faa{font-family: 'Lobster', cursive; color: white; font-size: x-large !important;}
+
+.para{margin-top: 100px;text-align: center;}
+.pp{margin-top: 40px;}
+
+.coo{background-color: #EAECEE;padding: 10px;padding-bottom: 30px;}
+
+.inpp{width: 400px; padding: 10px; background-color: #EAECEE;border-top: none;border-left: none;border-right: none;}
+
+.footer{padding-top: 50px !important;padding-bottom: 50px !important; background-color: #BFC8CC;}
+h4{color: black;}
+.list{ margin:  auto !important;}
+li{list-style: none;}
+li:hover{cursor: pointer; color: black;}
+
+
+.banner{background-image: url(./img/watchbanner.jpg);background-repeat: no-repeat;background-size: cover; height: 400px;}
+.banner2{background-image: url(./img/clockbanner.jpg);background-repeat: no-repeat;background-size: cover; height: 400px;}
+.quo{color: white;font-family: 'Lobster', cursive;;padding-top: 110px; padding-left: 20px;}
+.cuo{color: black;font-family: 'Lobster', cursive;;padding-top: 110px; padding-left: 20px;}
+
+.container{padding-top: 40px;margin: auto !important;margin-bottom: 30px !important;}
+
+
+.ww{margin-top: 20px;}
+
+.card{margin: 5;}
+.ce{text-align: center;margin-top: 40px;}
+
+
+.contact{width:50% ; margin: auto;margin-top: 70px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

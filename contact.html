@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  animatedNav">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./watchpage.html">Watches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./clockpage.html">Clocks</a>
+              </li>  
+              <li class="nav-item active">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+        </ul>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#loginModal" id="logSig">
+    Login/SignUp
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login/SignUp</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modBod">
+          <button class="btn btn-outline-primary logSi" onclick="logBtn(this)">Login</button>
+          <br><br>
+          <button class="btn btn-outline-info logSi" onclick="signBtn(this)">SignUp</button>
+    
+          <form class="hide" id="logInn">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group hide" id="sigInp">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+          </form>
+    
+        </div>
+        <div class="modal-footer" id="footerrr">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <span class="hide" id="logBtnn">
+          <button type="button" class="btn btn-primary" id="logBtnn" onclick="sub()">Submit</button>
+          </span>
+        </div>
+      </div>
+    </div>
+    </div>
+      </nav>
+
+
+
+                        <!-- body  -->
+
+
+                        <div class="contact">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll answer your questions</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Give us feedback</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+
+                          <button type="submit" class="btn btn-primary" onclick="submitFeed()">Submit</button>
+
+<div class="hide">
+<h1>Thank You for Your Feedback</h1>
+</div>
+
+                        </div>
+
+
+
+
+
+
+
+
+</body>
+<script src="./bootstrap/js/jquery.slim.min.js"></script>
+<script src="./bootstrap/js/popper.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+
+
+</html>

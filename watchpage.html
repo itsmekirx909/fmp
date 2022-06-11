@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watches</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  animatedNav">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./watchpage.html">Watches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./clockpage.html">Clocks</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+        </ul>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#loginModal" id="logSig">
+    Login/SignUp
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login/SignUp</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modBod">
+          <button class="btn btn-outline-primary logSi" onclick="logBtn(this)">Login</button>
+          <br><br>
+          <button class="btn btn-outline-info logSi" onclick="signBtn(this)">SignUp</button>
+
+          <form class="hide" id="logInn">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group hide" id="sigInp">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+          </form>
+
+        </div>
+        <div class="modal-footer" id="footerrr">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <span class="hide" id="logBtnn">
+          <button type="button" class="btn btn-primary" id="logBtnn" onclick="sub()">Submit</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+      </nav>
+
+                             <!-- banner  -->
+
+                       <div class="banner bAn">
+                           <h1 class="quo"><i>Everyone looks at your watch and <br>
+                               it represents who you are, <br>
+                             your values and your personal style.</i></h1>
+                             
+
+                       </div>
+
+
+                              <!-- cards  -->
+
+                              <h1 class="ce">Watches</h1>
+
+                       <section class="container gy-3">
+
+                        <div class="row ">
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                        <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Watch 1</h5>
+                              <p class="card-text">Price: <s>80$</s> - 50$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                          <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Watch 2</h5>
+                              <p class="card-text">Price: <s>60$</s> - 40$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                          <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Watch 3</h5>
+                              <p class="card-text">Price: <s>60$</s> - 45$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                          <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Watch 4</h5>
+                              <p class="card-text">Price: <s>40$</s> - 35$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                          <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch5.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Watch 5</h5>
+                              <p class="card-text">Price: <s>100$</s> - 80$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                          <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch6.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">watch 6</h5>
+                              <p class="card-text">Price: <s>50$</s> - 40$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                          <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch7.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">Watch 7</h5>
+                              <p class="card-text">Price: <s>30$</s> - 25$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+                        </div>
+
+
+<div class=" col-lg-3 col-md-4 col-sm-6 ww">
+                          <div class="card" >
+                            <img class="card-img-top wid" src="./img/watch8.jpg" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">watch 8</h5>
+                              <p class="card-text">Price: <s>90$</s> - 70$</p>
+                              <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                          </div>
+</div>
+
+                        </div>
+                       </section>
+
+
+                                  <!-- footer  -->
+
+                                  <section class="footer row m-0 ">
+         
+                                    <div class="m-4 list">
+                                        <h4>Products</h4>
+                                        <ul>
+                           <li>Watches</li>
+                           <li>Clocks</li>
+                                        </ul>
+                                    </div>
+                           
+                                    <div class="m-4 list">
+                                       <h4>Help</h4>
+                                       <ul>
+                           <li>Services</li>
+                           <li>Helpline</li>
+                                       </ul>
+                                   </div>
+                           
+                                   <div class="m-4 list">
+                                       <h4>About Us</h4>
+                                       <ul>
+                           <li>Contacts</li>
+                           <li>Address</li>
+                                       </ul>
+                                   </div>
+                           
+                                   <div class="m-4 list">
+                                       <h4>WatchBuy</h4>
+                                       <ul>
+                           <li>Terms and Conditions</li>
+                           <li>Privacy Policy</li>
+                                       </ul>
+                                   </div>
+                           
+                                </section>                 
+                           
+    
+</body>
+<script src="./bootstrap/js/jquery.slim.min.js"></script>
+<script src="./bootstrap/js/popper.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchBuy</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  animatedNav">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo.png" class="logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./watchpage.html">Watches</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./clockpage.html">Clocks</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+        </ul>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#loginModal" id="logSig">
+    Login/SignUp
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login/SignUp</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modBod">
+          <button class="btn btn-outline-primary logSi" onclick="logBtn(this)">Login</button>
+          <br>
+          <button class="btn btn-outline-info logSi" onclick="signBtn(this)">SignUp</button>
+
+          <form class="hide" id="logInn">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group hide" id="sigInp">
+                <label for="exampleInputPassword1">Confirm Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+          </form>
+
+        </div>
+        <div class="modal-footer" id="footerrr">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cance(this)">Cancel</button>
+          <span class="hide" id="logBtnn">
+          <button type="button" class="btn btn-primary" id="logBtnn" onclick="sub()">Submit</button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+      </nav>
+
+
+                     <!-- carousal -->
+
+                     <div id="carouselExampleIndicators" class="carousel slide hAn" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="./watchpage.html"><img class="d-block w-100 hei" src="./img/watchbanner.jpg" alt="First slide"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="faa">Lost time is never found again.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="./clockpage.html"><img class="d-block w-100 hei" src="./img/clockbanner.jpg" alt="Second slide"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="foo">Time is what you make of it.</h5>  
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="para">
+
+    <h1>WatchBuy</h1>
+
+    <p class="pp">At WatchBuy, you can guarantee you will find more watch brands than anywhere else. From the biggest designer brands, to the best of luxury and some hidden gems, along with outstanding service and next day delivery, WatchBuy is the hottest place to buy your next watch.</p>
+</div>
+
+<div class="para coo">
+    <h1>Be the first to know</h1>
+
+    <h3 class="pp">Discover how to find the best watch <br>
+         and enjoy exclusive products and <br>
+          offers</h3>
+
+          <input type="text" placeholder="Enter Your Email" class="pp inpp">
+
+          <br><br>
+
+          <button class="btn btn-outline-dark">Send Me Notifications</button>
+</div>
+
+      
+                      <!-- footer -->
+
+     <section class="footer row m-0 ">
+         
+         <div class="m-4 list">
+             <h4>Products</h4>
+             <ul>
+<li>Watches</li>
+<li>Clocks</li>
+             </ul>
+         </div>
+
+         <div class="m-4 list">
+            <h4>Help</h4>
+            <ul>
+<li>Services</li>
+<li>Helpline</li>
+            </ul>
+        </div>
+
+        <div class="m-4 list">
+            <h4>About Us</h4>
+            <ul>
+<li>Contacts</li>
+<li>Address</li>
+            </ul>
+        </div>
+
+        <div class="m-4 list">
+            <h4>WatchBuy</h4>
+            <ul>
+<li>Terms and Conditions</li>
+<li>Privacy Policy</li>
+            </ul>
+        </div>
+
+     </section>                 
+
+</body>
+<script src="./bootstrap/js/jquery.slim.min.js"></script>
+<script src="./bootstrap/js/popper.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./app.js"></script>
+
+</html>
