@@ -3,25 +3,32 @@ var logBtnn = document.getElementById('logBtnn')
 var logInn = document.getElementById('logInn')
 var sigInp = document.getElementById('sigInp')
 var logSig = document.getElementById('logSig')
+var form = document.getElementById('form')
+var submit = document.getElementById('submit')
+
+var loginBtn = document.getElementById('loginBtn')
+var signUpBtn = document.getElementById('signUpBtn')
 
 
 function logBtn(e){
-var par = e.parentNode.childNodes
-console.log(par)
-par[1].remove()
-par[4].remove()
+
+
+loginBtn.className = 'hide'
+signUpBtn.className = 'btn btn-outline-info logSi'
+
 
 logInn.className = 'show'
 logBtnn.className = 'show'
 logBtnn.setAttribute('data-dismiss' , "modal")
+sigInp.className = 'hide'
  
 }
 
 function signBtn(e){
-    var par = e.parentNode.childNodes
-console.log(par)
-par[1].remove()
-par[4].remove()
+
+
+    loginBtn.className = 'btn btn-outline-primary logSi'
+    signUpBtn.className = 'hide'
 
 logInn.className = 'show'
 logBtnn.className = 'show'
@@ -37,6 +44,7 @@ function sub(){
 
 
 function submitFeed(){
-    
+    form.className += ' hide'
+    submit.className = ''
 }
 

@@ -48,9 +48,9 @@
           </button>
         </div>
         <div class="modal-body" id="modBod">
-          <button class="btn btn-outline-primary logSi" onclick="logBtn(this)">Login</button>
-          <br><br>
-          <button class="btn btn-outline-info logSi" onclick="signBtn(this)">SignUp</button>
+          <button class="btn btn-outline-primary logSi" id="loginBtn" onclick="logBtn(this)">Login</button>
+          <br>
+          <button class="btn btn-outline-info logSi" id="signUpBtn" onclick="signBtn(this)">SignUp</button>
     
           <form class="hide" id="logInn">
             <div class="form-group">
@@ -86,6 +86,7 @@
 
 
                         <div class="contact">
+                          <div id="form">
                           <div class="form-group">
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -97,9 +98,16 @@
                           </div>
 
                           <button type="submit" class="btn btn-primary" onclick="submitFeed()">Submit</button>
+                        </div>
 
-<div class="hide">
-<h1>Thank You for Your Feedback</h1>
+<div class="hide" id="submit">
+
+  <div class="wrapper"> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+  </svg>
+  </div>
+
+  <h1 class="cent">Your Feedback Has Been Submitted</h1>
+  <h4 class="cent">We will respond to you shortly</h4>
 </div>
 
                         </div>
